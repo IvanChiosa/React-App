@@ -2,6 +2,7 @@ import React, { useState} from 'react';
 
 import GoalList from './components/GoalList/GoalList.js';
 import NewGoal from './components/NewGoal/NewGoal.js';
+import Hooks from './components/Hooks/HooksUseState.js';
 import './App.css';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
     // <h1 title="This work">Hallo Ivan</h1>  // React.createElement('h1', {}, 'Hallo von meine seite')
     <div className='course-goals'>
       <h2>Course Goals</h2>
+      <Hooks />
       <NewGoal onAddGoal={addNewGoalHandler}/>
       <GoalList goals={courseGoals}/>
     </div>
